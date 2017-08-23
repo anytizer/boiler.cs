@@ -1,0 +1,14 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hi..</title>
+	<meta charset="utf-8" />
+    @Scripts.Render("~/js")
+    @Styles.Render("~/css")
+</head>
+<body>
+    <p><strong>Path:</strong> (@Request.Url.AbsolutePath)</p>
+    @RenderBody()
+</body>
+</html>
